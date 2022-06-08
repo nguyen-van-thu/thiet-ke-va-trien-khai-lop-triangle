@@ -38,8 +38,8 @@ export class Triangle extends Shape {
         return (this._side1 + this._side2 + this._side3);
     }
     get Area(){
-        return (Math.sqrt(this.Perimeter*(this.Perimeter - this._side1)*
-            (this.Perimeter - this._side2)*(this.Perimeter - this._side3)))
+        return (Math.sqrt((this.Perimeter/2)*((this.Perimeter/2) - this._side1)*
+            ((this.Perimeter/2) - this._side2)*((this.Perimeter/2) - this._side3)))
 
 
     }
